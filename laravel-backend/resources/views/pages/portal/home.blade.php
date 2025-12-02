@@ -1,0 +1,1166 @@
+@include('layouts-portal.partials.header')
+
+<!-- Navbar -->
+@include('layouts-portal.partials.navbar')
+<!-- / Navbar -->
+
+
+<!--Main Slider Start-->
+<section class="main-slider-three clearfix" id="home">
+    <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
+                "effect": "fade",
+                "pagination": {
+                "el": "#main-slider-pagination",
+                "type": "bullets",
+                "clickable": true
+                },
+                "navigation": {
+                "nextEl": "#main-slider__swiper-button-next",
+                "prevEl": "#main-slider__swiper-button-prev"
+                },
+                "autoplay": {
+                "delay": 5000
+                }}'>
+
+
+        <!-- Carousel Start -->
+        <div class="swiper-wrapper">
+
+            <!-- image 1 -->
+            <div class="swiper-slide">
+                <div class="image-layer-three"
+                    style="background-image: url(portal-src/assets/images/backgrounds/main-slider-3-1.jpg);"></div>
+                <!-- /.image-layer -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="main-slider-three__content">
+                                <p class="main-slider-three__sub-title">TV & Internet Great Plan</p>
+                                <h2 class="main-slider-three__title">Get Entertainment <br> in One
+                                    <span>Place</span>
+                                </h2>
+                                <div class="main-slider-three__btn-box">
+                                    <a href="about.html" class="thm-btn main-slider__btn"> Discover more</a>
+                                </div>
+                                <div class="main-slider-three__shape-1">
+                                    <img src="{{asset('portal-src/assets/images/shapes/main-slider-three-shape-2.png')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- image 2 -->
+            <div class="swiper-slide">
+                <div class="image-layer-three"
+                    style="background-image: url(portal-src/assets/images/backgrounds/main-slider-3-2.jpg);"></div>
+                <!-- /.image-layer -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="main-slider-three__content">
+                                <p class="main-slider-three__sub-title">TV & Internet Great Plan</p>
+                                <h2 class="main-slider-three__title">Get Entertainment <br> in One
+                                    <span>Place</span>
+                                </h2>
+                                <div class="main-slider-three__btn-box">
+                                    <a href="about.html" class="thm-btn main-slider__btn"> Discover more</a>
+                                </div>
+                                <div class="main-slider-three__shape-1">
+                                    <img src="{{asset('portal-src/assets/images/shapes/main-slider-three-shape-2.png')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- image 3 -->
+            <div class="swiper-slide">
+                <div class="image-layer-three"
+                    style="background-image: url(portal-src/assets/images/backgrounds/main-slider-3-3.jpg);"></div>
+                <!-- /.image-layer -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="main-slider-three__content">
+                                <p class="main-slider-three__sub-title">TV & Internet Great Plan</p>
+                                <h2 class="main-slider-three__title">Get Entertainment <br> in One
+                                    <span>Place</span>
+                                </h2>
+                                <div class="main-slider-three__btn-box">
+                                    <a href="about.html" class="thm-btn main-slider__btn"> Discover more</a>
+                                </div>
+                                <div class="main-slider-three__shape-1">
+                                    <img src="{{asset('portal-src/assets/images/shapes/main-slider-three-shape-2.png')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="main-slider-three__nav">
+            <div class="swiper-button-prev" id="main-slider__swiper-button-next">
+                <i class="icon-left-arrow"></i>
+            </div>
+            <div class="swiper-button-next" id="main-slider__swiper-button-prev">
+                <i class="icon-right-arrow1"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--Main Slider End-->
+
+<!--Wifi Pack Start-->
+<section class="wifi-pack">
+    <div class="container">
+        <div class="wifi-pack__inner">
+            <div class="wifi-pack-shape float-bob-x">
+                <img src="{{asset('portal-src/assets/images/shapes/wifi-pack-shape-1.png')}}" alt="">
+            </div>
+            <div class="wifi-pack__left">
+                <div class="wifi-pack__icon">
+                    <span class="icon-router"></span>
+                </div>
+                <div class="wifi-pack__content">
+                    <h3 class="wifi-pack__price"><sup>Tk &nbsp;</sup> 1,499 <span>/Month</span></h3>
+                    <p class="wifi-pace__text">Free WiFi router included in the packages</p>
+                </div>
+            </div>
+            <div class="wifi-pack__btn-box">
+                <a href="packages-01.html" class="thm-btn wifi-pack__btn">Purchase now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Wifi Pack End-->
+
+<!--About Two Start-->
+<section class="about-two" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="about-two__left">
+                    <div class="section-title text-left">
+                        <span class="section-title__tagline">about us</span>
+                        <h2 class="section-title__title">Live browsing ultra HD quality with highspeed internet
+                        </h2>
+                    </div>
+                    <ul class="list-unstyled about-two__points">
+                        <li>
+                            <div class="icon">
+                                <span class="icon-hd"></span>
+                            </div>
+                            <div class="content">
+                                <div class="title-box">
+                                    <h3 class="odometer" data-count="4">00</h3>
+                                    <span class="letter">K</span>
+                                </div>
+                                <p>Ultra HD quality</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-network"></span>
+                            </div>
+                            <div class="content">
+                                <div class="title-box">
+                                    <h3 class="odometer" data-count="250">00</h3>
+                                </div>
+                                <p>Online channels</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="about-two__text">Etiam euismod eros in nisl iaculis venenatis. Aenean venenatis
+                        turpis et gravida interdum. Nulla facilisi. Pellentesque imperdiet, sem et commodo
+                        interdum, justo velit sagittis metus erat sed purus.</p>
+                    <a href="about.html" class="thm-btn about-two__btn">Discover more</a>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="about-two__right">
+                    <div class="about-two__img-box wow slideInRight" data-wow-delay="100ms"
+                        data-wow-duration="2500ms">
+                        <div class="about-two__img">
+                            <img src="{{asset('portal-src/assets/images/resources/about-two-img-1.jpg')}}" alt="">
+                        </div>
+                        <div class="about-two__img-two">
+                            <img src="{{asset('portal-src/assets/images/resources/about-two-img-2.jpg')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--About Two End-->
+
+<!--Services One Start-->
+<section class="services-one" id="services">
+    <div class="services-one-shape-1 float-bob-x">
+        <img src="{{asset('portal-src/assets/images/shapes/services-one-shape-1.png')}}" alt="">
+    </div>
+    <div class="services-one-shape-2 float-bob-y">
+        <img src="{{asset('portal-src/assets/images/shapes/services-one-shape-2.png')}}" alt="">
+    </div>
+    <div class="container">
+        <div class="services-one__top">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="services-one__top-left">
+                        <div class="section-title text-left">
+                            <span class="section-title__tagline">services we’re offering</span>
+                            <h2 class="section-title__title">What we’re providing to <br> our customers</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5">
+                    <div class="services-one__top-right">
+                        <p class="services-one__top-tex">Duis mollis varius quam sed congue. Aliquam porttitor
+                            ultricies porttitor elementum. Nullam pretium id massa ut placerat. Class aptent
+                            taciti sociosqu ad litora.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-one__bottom">
+            <div class="row">
+                <!--Services One Single Start-->
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="services-one__single">
+                        <div class="services-one__single-inner">
+                            <div class="services-one__single-bg"
+                                style="background-image: url(portal-src/assets/images/backgrounds/services-one-single-bg.jpg);">
+                            </div>
+                            <div class="services-one__icon">
+                                <span class="icon-tv-box"></span>
+                            </div>
+                            <h3 class="services-one__title"><a href="satelite-tv.html">Smart TV</a></h3>
+                            <p class="services-one__text">Nunc eleifend eget nunc eget consequat. Etiam sed
+                                varius est. Proin et lacus odio.</p>
+                        </div>
+                        <div class="services-one__arrow">
+                            <a href="satelite-tv.html"><span class="icon-right-arrow1"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Services One Single End-->
+                <!--Services One Single Start-->
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="services-one__single">
+                        <div class="services-one__single-inner">
+                            <div class="services-one__single-bg"
+                                style="background-image: url(portal-src/assets/images/backgrounds/services-one-single-bg.jpg);">
+                            </div>
+                            <div class="services-one__icon">
+                                <span class="icon-wifi-router"></span>
+                            </div>
+                            <h3 class="services-one__title"><a href="broadband.html">Broadband</a></h3>
+                            <p class="services-one__text">Nunc eleifend eget nunc eget consequat. Etiam sed
+                                varius est. Proin et lacus odio.</p>
+                        </div>
+                        <div class="services-one__arrow">
+                            <a href="broadband.html"><span class="icon-right-arrow1"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Services One Single End-->
+                <!--Services One Single Start-->
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="services-one__single">
+                        <div class="services-one__single-inner">
+                            <div class="services-one__single-bg"
+                                style="background-image: url(portal-src/assets/images/backgrounds/services-one-single-bg.jpg);">
+                            </div>
+                            <div class="services-one__icon">
+                                <span class="icon-mobile-app"></span>
+                            </div>
+                            <h3 class="services-one__title"><a href="all-for-mobile.html">All for mobile</a>
+                            </h3>
+                            <p class="services-one__text">Nunc eleifend eget nunc eget consequat. Etiam sed
+                                varius est. Proin et lacus odio.</p>
+                        </div>
+                        <div class="services-one__arrow">
+                            <a href="all-for-mobile.html"><span class="icon-right-arrow1"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Services One Single End-->
+                <!--Services One Single Start-->
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="services-one__single">
+                        <div class="services-one__single-inner">
+                            <div class="services-one__single-bg"
+                                style="background-image: url(portal-src/assets/images/backgrounds/services-one-single-bg.jpg);">
+                            </div>
+                            <div class="services-one__icon">
+                                <span class="icon-high-speed"></span>
+                            </div>
+                            <h3 class="services-one__title"><a href="fast-internet.html">Fast internet</a></h3>
+                            <p class="services-one__text">Nunc eleifend eget nunc eget consequat. Etiam sed
+                                varius est. Proin et lacus odio.</p>
+                        </div>
+                        <div class="services-one__arrow">
+                            <a href="fast-internet.html"><span class="icon-right-arrow1"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Services One Single End-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--Services One End-->
+
+<!--Benefits Start-->
+<section class="benefits">
+    <div class="benefits__wrapper">
+        <div class="benefits__left">
+            <div class="benefits__left-bg"
+                style="background-image: url(portal-src/assets/images/backgrounds/benefits-bg-one.jpg);"></div>
+        </div>
+        <div class="benefits__right">
+            <div class="benefits-shape-one"
+                style="background-image: url(portal-src/assets/images/shapes/benefits-shape-1.png);">
+            </div>
+            <div class="benefits__content-box">
+                <div class="section-title text-left">
+                    <span class="section-title__tagline">Only Benefits</span>
+                    <h2 class="section-title__title">Great reasons make you choose us</h2>
+                </div>
+                <p class="benefits__text">Duis mollis varius quam sed congue. Aliquam porttitor ultricies
+                    porttitor elementum. Nullam pretium id massa ut placerat. Class aptent taciti sociosqu ad
+                    litora.</p>
+                <div class="benefits__list-box">
+                    <ul class="list-unstyled benefits__list">
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Satellite Channels</h4>
+                                <p>Enjoy seamless streaming of popular local and global TV channels with your connection.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Free Installation</h4>
+                                <p>Professional setup and activation of your service done at zero initial cost.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled benefits__list benefits__list-two">
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="content">
+                                <h4>24/7 Support</h4>
+                                <p>Get reliable technical assistance from our experts, available all day, every day.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Best Tariff Plans</h4>
+                                <p>Access affordable, high-value internet packages tailored perfectly to your needs.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Benefits End-->
+
+<!--Price Start-->
+<section class="price" id="packages">
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="section-title__tagline">tariffs PLAN</span>
+            <h2 class="section-title__title">Choose our perfect <br> tariff plans</h2>
+        </div>
+        <div class="price__inner">
+            <!--Price Single Start-->
+            <div class="price__single wow fadeInUp" data-wow-delay="100ms">
+                <div class="price__main-progress-box">
+                    <div class="price__progress-single">
+                        <div class="price__progress-box">
+                            <div class="circle-progress"
+                                data-options='{ "value": 0.15,"thickness": 10,"emptyFill": "#f7f5f1","lineCap": "square", "size": 140, "fill": { "color": "#089fac" } }'>
+                            </div><!-- /.circle-progress -->
+                            <div class="price__pack">
+                                <p>15</p>
+                                <span>Mbps</span>
+                            </div>
+                        </div>
+                        <div class="price__progress-content">
+                            <p>Internet + TV</p>
+                            <h3>Bronze Pack</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__right-content-box">
+                    <ul class="list-unstyled price__right-points">
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>Internet with a 15 Mbps</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>TV, Movie & Gaming Server</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>WiFi router & prevention</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>Unlimited devices users</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="price__box">
+                        <h2 class="price__box-price"> <sup class="price__box-price-dolar">Tk &nbsp;</sup> 599
+                            <!-- <sup class="price__box-price-last-text">.99</sup> -->
+                        </h2>
+                        <div class="price__btn-box">
+                            <a href="contact.html" class="thm-btn price__btn">Get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Price Single End-->
+            <!--Price Single Start-->
+            <div class="price__single wow fadeInUp" data-wow-delay="200ms">
+                <div class="price__main-progress-box">
+                    <div class="price__progress-single">
+                        <div class="price__progress-box">
+                            <div class="circle-progress"
+                                data-options='{ "value": 0.20,"thickness": 10,"emptyFill": "#f7f5f1","lineCap": "square", "size": 140, "fill": { "color": "#4947b8ff" } }'>
+                            </div><!-- /.circle-progress -->
+                            <div class="price__pack">
+                                <p>20</p>
+                                <span>Mbps</span>
+                            </div>
+                        </div>
+                        <div class="price__progress-content">
+                            <p>Internet + TV</p>
+                            <h3>Silver Pack</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__right-content-box">
+                    <ul class="list-unstyled price__right-points">
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>Internet with a 20 Mbps</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>TV, Movie & Gaming Server</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>WiFi router & prevention</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>Unlimited devices users</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="price__box">
+                        <h2 class="price__box-price"> <sup class="price__box-price-dolar">Tk &nbsp;</sup> 799
+                            <!-- <sup class="price__box-price-last-text">.99</sup> -->
+                        </h2>
+                        <div class="price__btn-box">
+                            <a href="contact.html" class="thm-btn price__btn">Get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Price Single End-->
+            <!--Price Single Start-->
+            <div class="price__single wow fadeInUp" data-wow-delay="300ms">
+                <div class="price__main-progress-box">
+                    <div class="price__progress-single">
+                        <div class="price__progress-box">
+                            <div class="circle-progress"
+                                data-options='{ "value": 0.30,"thickness": 10,"emptyFill": "#f7f5f1","lineCap": "square", "size": 140, "fill": { "color": "#a16851ff" } }'>
+                            </div><!-- /.circle-progress -->
+                            <div class="price__pack">
+                                <p>30</p>
+                                <span>Mbps</span>
+                            </div>
+                        </div>
+                        <div class="price__progress-content">
+                            <p>Internet + TV</p>
+                            <h3>Gold Pack</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__right-content-box">
+                    <ul class="list-unstyled price__right-points">
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>Internet with a 1000 Mbps</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>TV, Movie & Gaming Server</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>WiFi router & prevention</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>Unlimited devices users</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="price__box">
+                        <h2 class="price__box-price"> <sup class="price__box-price-dolar">Tk &nbsp;</sup> 999
+                            <!-- <sup class="price__box-price-last-text">.99</sup> -->
+                        </h2>
+                        <div class="price__btn-box">
+                            <a href="contact.html" class="thm-btn price__btn">Get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Price Single End-->
+            <!--Price Single Start-->
+            <div class="price__single wow fadeInUp" data-wow-delay="400ms">
+                <div class="price__main-progress-box">
+                    <div class="price__progress-single">
+                        <div class="price__progress-box">
+                            <div class="circle-progress"
+                                data-options='{ "value": 0.60,"thickness": 10,"emptyFill": "#f7f5f1","lineCap": "square", "size": 140, "fill": { "color": "#353b48" } }'>
+                            </div><!-- /.circle-progress -->
+                            <div class="price__pack">
+                                <p>60</p>
+                                <span>Mbps</span>
+                            </div>
+                        </div>
+                        <div class="price__progress-content">
+                            <p>Internet + TV</p>
+                            <h3>Platinum Pack</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__right-content-box">
+                    <ul class="list-unstyled price__right-points">
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>Internet with a 60 Mbps</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>Connect multiple users</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>WiFi router free</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="text">
+                                <p>Unlimited devices users</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="price__box">
+                        <h2 class="price__box-price"> <sup class="price__box-price-dolar">Tk &nbsp;</sup> 1,499
+                            <!-- <sup class="price__box-price-last-text">.99</sup> -->
+                        </h2>
+                        <div class="price__btn-box">
+                            <a href="contact.html" class="thm-btn price__btn">Get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Price Single End-->
+        </div>
+    </div>
+</section>
+<!--Price End-->
+
+<!--Testimonial Two Start-->
+<section class="testimonial-two" id="testimonial">
+    <div class="testimonial-two-bg"
+        style="background-image: url(portal-src/assets/images/backgrounds/testimonial-two-bg.png);"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-5">
+                <div class="testimonial-two__left">
+                    <div class="testimonial-two__img">
+                        <img src="{{asset('portal-src/assets/images/testimonial/testimonial-two-left-img.jpg')}}" alt="">
+                        <div class="testimonial-two__toggle">
+                            <div class="testimonial-two__toggle-shape"
+                                style="background-image: url(portal-src/assets/images/shapes/testimonial-two-toggle-shape.png);">
+                            </div>
+                            <p>Happy <br> customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-7">
+                <div class="testimonial-two__right">
+                    <div class="section-title text-left">
+                        <span class="section-title__tagline"> our feedbacks</span>
+                        <h2 class="section-title__title">What they’re talking <br> about zeinet</h2>
+                    </div>
+                    <div class="testimonial-two__slider">
+                        <div class="testimonials-two__main-content">
+                            <div class="swiper-container" id="testimonials-two__carousel">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-two__conent-box">
+                                            <div class="testimonial-two__conent-img">
+                                                <img src="{{asset('portal-src/assets/images/testimonial/testimonial-two-content-img-1.jpg')}}"
+                                                    alt="">
+                                                <div class="testimonial-two__quote">
+                                                    <span class="icon-quote"></span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-two__detsils-box">
+                                                <div class="testimonial-two__rate">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <p class="testimonial-two__text">Lorem ipsum is simply free text
+                                                    dolor sit amet, consect notted adipisicing elit sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                </p>
+                                                <h3 class="testimonial-two__client"> Sarah Albart <span>//
+                                                        Customer</span> </h3>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-two__conent-box">
+                                            <div class="testimonial-two__conent-img">
+                                                <img src="{{asset('portal-src/assets/images/testimonial/testimonial-two-content-img-2.jpg')}}"
+                                                    alt="">
+                                                <div class="testimonial-two__quote">
+                                                    <span class="icon-quote"></span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-two__detsils-box">
+                                                <div class="testimonial-two__rate">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <p class="testimonial-two__text">Lorem ipsum is simply free text
+                                                    dolor sit amet, consect notted adipisicing elit sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                </p>
+                                                <h3 class="testimonial-two__client">Mike Hardson <span>//
+                                                        Customer</span> </h3>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-two__conent-box">
+                                            <div class="testimonial-two__conent-img">
+                                                <img src="{{asset('portal-src/assets/images/testimonial/testimonial-two-content-img-3.jpg')}}"
+                                                    alt="">
+                                                <div class="testimonial-two__quote">
+                                                    <span class="icon-quote"></span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-two__detsils-box">
+                                                <div class="testimonial-two__rate">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <p class="testimonial-two__text">Lorem ipsum is simply free text
+                                                    dolor sit amet, consect notted adipisicing elit sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                </p>
+                                                <h3 class="testimonial-two__client">Jessica Brown <span>//
+                                                        Customer</span> </h3>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-two__conent-box">
+                                            <div class="testimonial-two__conent-img">
+                                                <img src="{{asset('portal-src/assets/images/testimonial/testimonial-two-content-img-4.jpg')}}"
+                                                    alt="">
+                                                <div class="testimonial-two__quote">
+                                                    <span class="icon-quote"></span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-two__detsils-box">
+                                                <div class="testimonial-two__rate">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <p class="testimonial-two__text">Lorem ipsum is simply free text
+                                                    dolor sit amet, consect notted adipisicing elit sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                </p>
+                                                <h3 class="testimonial-two__client">Kevin Martin <span>//
+                                                        Customer</span> </h3>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.swiper-slide -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container" id="testimonials-two__thumb">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-two__img-holder">
+                                        <img src="{{asset('portal-src/assets/images/testimonial/testimonial-2-1.jpg')}}" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-two__img-holder">
+                                        <img src="{{asset('portal-src/assets/images/testimonial/testimonial-2-2.jpg')}}" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-two__img-holder">
+                                        <img src="{{asset('portal-src/assets/images/testimonial/testimonial-2-3.jpg')}}" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-two__img-holder">
+                                        <img src="{{asset('portal-src/assets/images/testimonial/testimonial-2-4.jpg')}}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Testimonial Two End-->
+
+<!--Entertainment Start-->
+<section class="entertainment">
+    <div class="entertainment-shape-bg"
+        style="background-image: url(portal-src/assets/images/shapes/entertainment-shape-bg.png);"></div>
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="section-title__tagline">stream without a stop</span>
+            <h2 class="section-title__title">Discover a world of all <br> entertainment</h2>
+        </div>
+        <div class="row">
+            <!--Entertainment Single Start-->
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                <div class="entertainment__single">
+                    <div class="entertainment__img">
+                        <img src="{{asset('portal-src/assets/images/resources/entertainment-img-1-1.jpg')}}" alt="">
+                        <div class="entertainment__hover-box">
+                            <p class="entertainment__hover-text">2020 <i class="fa fa-star"></i>
+                                <span>6.5</span>
+                            </p>
+                            <h3 class="entertainment__hover-title"><a href="movie.html">Last Gun Shoot</a></h3>
+                            <div class="entertainment__video-link">
+                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                                    <div class="entertainment__video-icon">
+                                        <span class="fa fa-play"></span>
+                                        <i class="ripple"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Entertainment Single End-->
+            <!--Entertainment Single Start-->
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                <div class="entertainment__single">
+                    <div class="entertainment__img">
+                        <img src="{{asset('portal-src/assets/images/resources/entertainment-img-1-2.jpg')}}" alt="">
+                        <div class="entertainment__hover-box">
+                            <p class="entertainment__hover-text">2020 <i class="fa fa-star"></i>
+                                <span>6.5</span>
+                            </p>
+                            <h3 class="entertainment__hover-title"><a href="movie.html">Last Gun Shoot</a></h3>
+                            <div class="entertainment__video-link">
+                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                                    <div class="entertainment__video-icon">
+                                        <span class="fa fa-play"></span>
+                                        <i class="ripple"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Entertainment Single End-->
+            <!--Entertainment Single Start-->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                <div class="entertainment__single">
+                    <div class="entertainment__img">
+                        <img src="{{asset('portal-src/assets/images/resources/entertainment-img-1-3.jpg')}}" alt="">
+                        <div class="entertainment__hover-box">
+                            <p class="entertainment__hover-text">2020 <i class="fa fa-star"></i>
+                                <span>6.5</span>
+                            </p>
+                            <h3 class="entertainment__hover-title"><a href="movie.html">Last Gun Shoot</a></h3>
+                            <div class="entertainment__video-link">
+                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                                    <div class="entertainment__video-icon">
+                                        <span class="fa fa-play"></span>
+                                        <i class="ripple"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Entertainment Single End-->
+            <!--Entertainment Single Start-->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                <div class="entertainment__single">
+                    <div class="entertainment__img">
+                        <img src="{{asset('portal-src/assets/images/resources/entertainment-img-1-4.jpg')}}" alt="">
+                        <div class="entertainment__hover-box">
+                            <p class="entertainment__hover-text">2020 <i class="fa fa-star"></i>
+                                <span>6.5</span>
+                            </p>
+                            <h3 class="entertainment__hover-title"><a href="movie.html">Last Gun Shoot</a></h3>
+                            <div class="entertainment__video-link">
+                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                                    <div class="entertainment__video-icon">
+                                        <span class="fa fa-play"></span>
+                                        <i class="ripple"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Entertainment Single End-->
+            <!--Entertainment Single Start-->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="500ms">
+                <div class="entertainment__single">
+                    <div class="entertainment__img">
+                        <img src="{{asset('portal-src/assets/images/resources/entertainment-img-1-5.jpg')}}" alt="">
+                        <div class="entertainment__hover-box">
+                            <p class="entertainment__hover-text">2020 <i class="fa fa-star"></i>
+                                <span>6.5</span>
+                            </p>
+                            <h3 class="entertainment__hover-title"><a href="movie.html">Last Gun Shoot</a></h3>
+                            <div class="entertainment__video-link">
+                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                                    <div class="entertainment__video-icon">
+                                        <span class="fa fa-play"></span>
+                                        <i class="ripple"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Entertainment Single End-->
+        </div>
+    </div>
+</section>
+<!--Entertainment End-->
+
+<!--Brand One Start-->
+<section class="brand-one">
+    <div class="brand-one-shape-1 float-bob-x">
+        <img src="{{asset('portal-src/assets/images/shapes/brand-one-shape-1.png')}}" alt="">
+    </div>
+    <div class="brand-one-shape-2 float-bob-y">
+        <img src="{{asset('portal-src/assets/images/shapes/brand-one-shape-2.png')}}" alt="">
+    </div>
+    <div class="container">
+        <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+                                    "0": {
+                                        "spaceBetween": 30,
+                                        "slidesPerView": 2
+                                    },
+                                    "375": {
+                                        "spaceBetween": 30,
+                                        "slidesPerView": 2
+                                    },
+                                    "575": {
+                                        "spaceBetween": 30,
+                                        "slidesPerView": 3
+                                    },
+                                    "767": {
+                                        "spaceBetween": 50,
+                                        "slidesPerView": 4
+                                    },
+                                    "991": {
+                                        "spaceBetween": 50,
+                                        "slidesPerView": 5
+                                    },
+                                    "1199": {
+                                        "spaceBetween": 50,
+                                        "slidesPerView": 5
+                                    }
+                                }}'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{asset('portal-src/assets/images/brand/brand-1-1.png')}}" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('portal-src/assets/images/brand/brand-1-2.png')}}" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('portal-src/assets/images/brand/brand-1-3.png')}}" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('portal-src/assets/images/brand/brand-1-4.png')}}" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('portal-src/assets/images/brand/brand-1-5.png')}}" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('portal-src/assets/images/brand/brand-1-1.png')}}" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('portal-src/assets/images/brand/brand-1-2.png')}}" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('portal-src/assets/images/brand/brand-1-3.png')}}" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('portal-src/assets/images/brand/brand-1-4.png')}}" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('portal-src/assets/images/brand/brand-1-5.png')}}" alt="">
+                </div><!-- /.swiper-slide -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--Brand One End-->
+
+<!--News One Start-->
+<section class="news-one news-two" id="news">
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="section-title__tagline">from the Blog</span>
+            <h2 class="section-title__title">Our latest news <br> & articles</h2>
+        </div>
+        <div class="row">
+            <!--News One Single Start-->
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                <div class="news-one__single">
+                    <div class="news-one__img-box">
+                        <img src="{{asset('portal-src/assets/images/blog/news-1.1.jpg')}}" alt="">
+                        <a href="news-details.html"><span class="icon-plus-symbol"></span></a>
+                    </div>
+                    <div class="news-one__content-box">
+                        <div class="news-one__content">
+                            <ul class="news-one__meta list-unstyled">
+                                <li>
+                                    <a href="news-details.html"><i class="fas fa-user-circle"></i>by Admin</a>
+                                </li>
+                                <li>
+                                    <a href="news-details.html"><i class="fas fa-comments"></i>02 Comments</a>
+                                </li>
+                            </ul>
+                            <h3 class="news-one__title"><a href="news-details.html">The best usage of the fiber
+                                    internet from
+                                    broadband</a></h3>
+                        </div>
+                        <div class="news-one__bottom">
+                            <a href="news-details.html" class="news-one__read-more">Read More</a>
+                        </div>
+                        <div class="news-one__date">
+                            <p>18 may</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--News One Single End-->
+            <!--News One Single Start-->
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                <div class="news-one__single">
+                    <div class="news-one__img-box">
+                        <img src="{{asset('portal-src/assets/images/blog/news-1.2.jpg')}}" alt="">
+                        <a href="news-details.html"><span class="icon-plus-symbol"></span></a>
+                    </div>
+                    <div class="news-one__content-box">
+                        <div class="news-one__content">
+                            <ul class="news-one__meta list-unstyled">
+                                <li>
+                                    <a href="news-details.html"><i class="fas fa-user-circle"></i>by Admin</a>
+                                </li>
+                                <li>
+                                    <a href="news-details.html"><i class="fas fa-comments"></i>02 Comments</a>
+                                </li>
+                            </ul>
+                            <h3 class="news-one__title"><a href="news-details.html">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit</a></h3>
+                        </div>
+                        <div class="news-one__bottom">
+                            <a href="news-details.html" class="news-one__read-more">Read More</a>
+                        </div>
+                        <div class="news-one__date">
+                            <p>18 may</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--News One Single End-->
+            <!--News One Single Start-->
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                <div class="news-one__single">
+                    <div class="news-one__img-box">
+                        <img src="{{asset('portal-src/assets/images/blog/news-1.3.jpg')}}" alt="">
+                        <a href="news-details.html"><span class="icon-plus-symbol"></span></a>
+                    </div>
+                    <div class="news-one__content-box">
+                        <div class="news-one__content">
+                            <ul class="news-one__meta list-unstyled">
+                                <li>
+                                    <a href="news-details.html"><i class="fas fa-user-circle"></i>by Admin</a>
+                                </li>
+                                <li>
+                                    <a href="news-details.html"><i class="fas fa-comments"></i>02 Comments</a>
+                                </li>
+                            </ul>
+                            <h3 class="news-one__title"><a href="news-details.html">Suspendisse posuere, leo ac
+                                    laoreet dapibus, urna</a></h3>
+                        </div>
+                        <div class="news-one__bottom">
+                            <a href="news-details.html" class="news-one__read-more">Read More</a>
+                        </div>
+                        <div class="news-one__date">
+                            <p>18 may</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--News One Single End-->
+        </div>
+    </div>
+</section>
+<!--News One End-->
+
+<!--Newsletter Start-->
+<section class="newsletter">
+            <div class="container">
+                <div class="newsletter__inner">
+                    <div class="newsletter__left">
+                        <div class="newsletter__icon">
+                            <span class="icon-newsletter"></span>
+                        </div>
+                        <div class="newsletter__content">
+                            <h3>Subscribe now to get <br> latest updates</h3>
+                        </div>
+                    </div>
+                    <div class="newsletter__right">
+                        <form method="POST" action="{{ route('newsletter.subscribe') }}" class="newsletter__form">
+                        @csrf    
+                        <div class="newsletter__input-box">
+                                <input type="email" placeholder="Email address" name="email">
+                                <button type="submit" class="newsletter__btn thm-btn">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--/Newsletter End-->
+
+<!-- Footer -->
+@include('layouts-portal.partials.footer')
+<!-- / Footer -->
