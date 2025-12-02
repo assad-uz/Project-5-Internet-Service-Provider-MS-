@@ -2,93 +2,86 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Area;
 use App\Models\Customer;
-use App\Models\CustomerType;
 use Illuminate\Http\Request;
+// যেহেতু আমরা API ব্যবহার করছি, তাই Area, CustomerType, এবং Rule এর প্রয়োজন নেই
+// কিন্তু আপনার ভবিষ্যতে লাগতে পারে, তাই সেগুলোকে আপাতত বাদ রাখছি না।
+use App\Models\Area;
+use App\Models\CustomerType;
 use Illuminate\Validation\Rule;
+
 
 class CustomerController extends Controller
 {
-    // 1. INDEX: সমস্ত কাস্টমার দেখানোর জন্য
+    // ১. INDEX: সমস্ত কাস্টমার দেখানোর জন্য (List.jsx এর জন্য)
     public function index()
     {
-        // Eager Loading: area এবং customerType রিলেশনশিপ লোড করা হচ্ছে
-        $customers = Customer::with(['area', 'customerType'])
-                             ->orderBy('id', 'desc')
-                             ->paginate(10); 
-                             
-        return view('pages.admin.customers.index', compact('customers'));
-    }
-
-    // 2. CREATE: নতুন ফর্ম দেখানোর জন্য
-    public function create()
-    {
-        $areas = Area::orderBy('name')->get(); 
-        $customerTypes = CustomerType::orderBy('name')->get();
-        // status-এর জন্য ENUM ভ্যালু
-        $statuses = ['active', 'inactive', 'suspended'];
+        // React-এর জন্য শুধুমাত্র প্রয়োজনীয় ফিল্ডগুলো দিন
+        $customers = Customer::orderBy('id', 'desc')->get();
         
-        return view('pages.admin.customers.create', compact('areas', 'customerTypes', 'statuses'));
+        // ✅ API এর জন্য JSON রেসপন্স
+        return response()->json($customers); 
     }
 
-    // 3. STORE: নতুন ডেটা সেভ করার জন্য
+    // ২. STORE: নতুন ডেটা সেভ করার জন্য (Insert.jsx এর জন্য)
     public function store(Request $request)
     {
+        // React ফর্ম থেকে প্রয়োজনীয় ডেটা validation
+        // এখানে phone, area_id, customer_type_id, status ইত্যাদি বাদ দেওয়া হয়েছে
+        // কারণ আপনার React ফর্মে শুধুমাত্র name, email, address আছে।
+        // যদি আপনি ফুল ফর্ম তৈরি করেন, তাহলে এই Validation গুলো আবার যোগ করবেন।
         $validated = $request->validate([
             'name' => 'required|string|max:150',
-            'phone' => 'required|string|max:20|unique:customers,phone',
-            'email' => 'nullable|email|max:100|unique:customers,email',
+            'email' => 'required|email|max:100|unique:customers,email', // React এ email required
             'address' => 'required|string',
-            'area_id' => 'required|exists:areas,id',
-            'customer_type_id' => 'required|exists:customer_types,id',
-            // Rule::in() ব্যবহার করে নিশ্চিত করা হচ্ছে যে স্ট্যাটাস ENUM-এর মধ্যে আছে
-            'status' => ['required', Rule::in(['active', 'inactive', 'suspended'])],
         ]);
         
         Customer::create($validated);
 
-        return redirect()->route('customers.index')
-                         ->with('success', 'Customer created successfully.');
+        // ✅ API এর জন্য 201 Created স্ট্যাটাস সহ JSON রেসপন্স
+        return response()->json([
+            'message' => 'Customer created successfully.', 
+            'customer' => $validated
+        ], 201);
     }
 
-    // 4. EDIT: এডিট ফর্ম দেখানোর জন্য
-    public function edit(Customer $customer)
+    // ৩. SHOW: নির্দিষ্ট কাস্টমার দেখানোর জন্য (Edit.jsx এ ডেটা লোড করতে)
+    // Model Binding ব্যবহার করা হয়েছে
+    public function show(Customer $customer)
     {
-        $areas = Area::orderBy('name')->get(); 
-        $customerTypes = CustomerType::orderBy('name')->get();
-        $statuses = ['active', 'inactive', 'suspended'];
-        
-        return view('pages.admin.customers.edit', compact('customer', 'areas', 'customerTypes', 'statuses'));
+        // ✅ API এর জন্য JSON রেসপন্স
+        return response()->json($customer);
     }
 
-    // 5. UPDATE: ডেটা আপডেট করার জন্য
+    // ৪. UPDATE: ডেটা আপডেট করার জন্য (Edit.jsx এর জন্য)
     public function update(Request $request, Customer $customer)
     {
+        // validation: বর্তমান কাস্টমারকে বাদ দিয়ে uniqueness চেক
         $validated = $request->validate([
             'name' => 'required|string|max:150',
-            // ফোন এবং ইমেইল uniqueness চেক করা হচ্ছে, বর্তমান কাস্টমারকে বাদ দিয়ে
-            'phone' => 'required|string|max:20|unique:customers,phone,' . $customer->id,
-            'email' => 'nullable|email|max:100|unique:customers,email,' . $customer->id,
+            'email' => 'required|email|max:100|unique:customers,email,' . $customer->id,
             'address' => 'required|string',
-            'area_id' => 'required|exists:areas,id',
-            'customer_type_id' => 'required|exists:customer_types,id',
-            'status' => ['required', Rule::in(['active', 'inactive', 'suspended'])],
         ]);
 
         $customer->update($validated);
 
-        return redirect()->route('customers.index')
-                         ->with('success', 'Customer updated successfully.');
+        // ✅ API এর জন্য 200 OK স্ট্যাটাস সহ JSON রেসপন্স
+        return response()->json([
+            'message' => 'Customer updated successfully.', 
+            'customer' => $customer
+        ]);
     }
 
-    // 6. DESTROY: ডেটা ডিলিট করার জন্য
+    // ৫. DESTROY: ডেটা ডিলিট করার জন্য (List.jsx এর জন্য)
     public function destroy(Customer $customer)
     {
-        // 💡 যদি ভবিষ্যতে Customer-এর সাথে Connection বা Billing-এর সম্পর্ক থাকে, তবে এখানে চেক করতে হবে।
         $customer->delete();
         
-        return redirect()->route('customers.index')
-                         ->with('success', 'Customer deleted successfully.');
+        // ✅ API এর জন্য 204 No Content স্ট্যাটাস সহ সফল রেসপন্স
+        return response()->json(null, 204); 
     }
+
+    // Create এবং Edit মেথডগুলো এখন API-তে দরকার নেই, তাই বাদ দেওয়া হলো।
+    // (যদি আপনি সব ডেটা সহ ফুল ফর্ম তৈরি করেন, তবে index বা show মেথডের মাধ্যমে
+    // area ও customerType ডেটা লোড করে নিতে পারেন)
 }
